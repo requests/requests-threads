@@ -20,7 +20,7 @@ Example Usage (using Async/Await)::
 	    print(rs)
 
 	if __name__ == '__main__':
-		session.run(_main)
+	    session.run(_main)
 
 Example Usage (using Twisted)::
 
