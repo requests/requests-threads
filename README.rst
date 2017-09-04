@@ -24,6 +24,8 @@ Example Usage (using Async/Await):
 	if __name__ == '__main__':
 	    session.run(_main)
 
+*This example works on Python 3 only.*
+
 Example Usage (using Twisted):
 
 .. code:: python
@@ -46,6 +48,10 @@ Example Usage (using Twisted):
 
 	if __name__ == '__main__':
 	    react(main)
+
+*This example works on Python 2 and Python 3.*
+
+--------------------
 
 Each request is sent via a new thread, automatically. This works fine for basic
 use cases.
