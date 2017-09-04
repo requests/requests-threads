@@ -51,7 +51,7 @@ Example Usage (using Twisted):
 	if __name__ == '__main__':
 	    react(main)
 
-*This example works on Python 2 and Python 3.*
+*This example works on both Python 2 and Python 3.*
 
 --------------------
 
