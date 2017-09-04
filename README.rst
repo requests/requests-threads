@@ -9,13 +9,15 @@ It's awesome, basically — check it out:
 Examples
 --------
 
+Let's send 100 concurrent requests! \\o/
+
 Example Usage (using ``async``/``await``):
 
 .. code:: python
 
 	from requests_threads import AsyncSession
 
-	session = AsyncSession()
+	session = AsyncSession(n=100)
 
 	async def _main():
 	    rs = []
@@ -71,8 +73,8 @@ Installation
 
     $ pipenv install requests-threads
     ✨🍰✨
-    
-    
+
+
 Inspiration
 -----------
 
