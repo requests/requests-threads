@@ -9,7 +9,7 @@ from requests import Session
 
 
 class AsyncSession(Session):
-    """An Asyncronous Requests session.
+    """An asynchronous Requests session.
 
     Provides cookie persistence, connection-pooling, and configuration.
 
