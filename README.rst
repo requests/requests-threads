@@ -28,7 +28,7 @@ Example Usage (using ``async``/``await``):
 	if __name__ == '__main__':
 	    session.run(_main)
 
-*This example works on Python 3 only.*
+*This example works on Python 3 only.* You can also provide your own ``asyncio`` event loop!
 
 Example Usage (using Twisted):
 
