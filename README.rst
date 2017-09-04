@@ -9,7 +9,7 @@ It's awesome, basically — check it out:
 Examples
 --------
 
-Example Usage (using Async/Await):
+Example Usage (using ``async``/``await``):
 
 .. code:: python
 
