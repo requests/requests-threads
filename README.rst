@@ -37,10 +37,11 @@ Let's send 100 concurrent requests! \\o/
 
 .. code:: python
 
-	import requests
+	
 	from twisted.internet.defer import inlineCallbacks
 	from twisted.internet.task import react
-
+	from requests_threads import AsyncSession
+	
 	session = requests.AsyncSession(n=100)
 
 	@inlineCallbacks
