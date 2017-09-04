@@ -27,11 +27,11 @@ class AsyncSession(Session):
       <Response [200]>
     """
 
-    def __init__(self, n=None, reactor=None, *args, **kwargs):
+    def __init__(self, n=None, reactor=None, loop=None, *args, **kwargs):
         if reactor is None:
             try:
                 import asyncio
-                loop = asyncio.get_event_loop()
+                loop = loop or asyncio.get_event_loop()
                 try:
                     from twisted.internet import asyncioreactor
                     asyncioreactor.install(loop)
@@ -68,5 +68,5 @@ class AsyncSession(Session):
                 # If so, convert coroutine to Deferred automatically.
                 return task.react(w)
         else:
-            # Otherwise, run the Defferred.
+            # Otherwise, run the Deferred.
             return task.react(f)
