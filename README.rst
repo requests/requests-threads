@@ -7,7 +7,9 @@ Deferreds instead of response objects.
 Examples
 --------
 
-Example Usage (using Async/Await)::
+Example Usage (using Async/Await):
+
+.. code:: python
 
 	from requests_threads import AsyncSession
 
@@ -22,7 +24,9 @@ Example Usage (using Async/Await)::
 	if __name__ == '__main__':
 	    session.run(_main)
 
-Example Usage (using Twisted)::
+Example Usage (using Twisted):
+
+.. code:: python
 
 	from twisted.internet.defer import inlineCallbacks
 	from twisted.internet.task import react
