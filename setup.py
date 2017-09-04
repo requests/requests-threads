@@ -12,7 +12,7 @@ from shutil import rmtree
 from setuptools import setup, Command
 
 # Package meta-data.
-NAME = 'requests_threads'
+NAME = 'requests-threads'
 DESCRIPTION = 'A Requests session that returns awaitable Twisted Deferreds instead of response objects.'
 URL = 'https://github.com/requests/requests/requests-threads'
 EMAIL = 'me@kennethreitz.org'
