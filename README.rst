@@ -11,7 +11,7 @@ Examples
 
 Let's send 100 concurrent requests! \\o/
 
-Example Usage (using ``async``/``await``):
+**Example Usage** (using ``async``/``await``):
 
 .. code:: python
 
@@ -30,7 +30,7 @@ Example Usage (using ``async``/``await``):
 
 *This example works on Python 3 only.* You can also provide your own ``asyncio`` event loop!
 
-Example Usage (using Twisted):
+**Example Usage** (using Twisted):
 
 .. code:: python
 
