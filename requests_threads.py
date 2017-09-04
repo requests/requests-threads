@@ -27,7 +27,7 @@ class AsyncSession(Session):
       <Response [200]>
     """
 
-    def __init__(self, reactor=None, *args, **kwargs):
+    def __init__(self, n=None, reactor=None, *args, **kwargs):
         if reactor is None:
             try:
                 import asyncio
@@ -39,6 +39,12 @@ class AsyncSession(Session):
                     pass
             except ImportError:
                 pass
+
+            # Adjust the pool size, according to n.
+            if n:
+                from twisted.internet import reactor
+                pool = reactor.getThreadPool()
+                pool.adjustPoolsize(0, n)
 
         super(AsyncSession, self).__init__(*args, **kwargs)
 

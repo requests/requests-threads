@@ -36,7 +36,7 @@ Example Usage (using Twisted):
 	from twisted.internet.task import react
 	import requests
 
-	session = requests.AsyncSession()
+	session = requests.AsyncSession(n=100)
 
 	@inlineCallbacks
 	def main(reactor):
