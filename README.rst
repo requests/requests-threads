@@ -2,7 +2,9 @@ requests-threads 🎭
 ===================
 
 This repo contains a Requests session that returns awaitable Twisted
-Deferreds instead of response objects.
+Deferreds instead of Response objects.
+
+It's awesome, basically — check it out:
 
 Examples
 --------
