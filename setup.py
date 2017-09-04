@@ -21,7 +21,8 @@ VERSION = '0.1.0'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    'requests'
+    'requests',
+    'twisted'
 ]
 
 # The rest you shouldn't have to touch too much :)
