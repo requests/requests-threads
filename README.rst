@@ -71,3 +71,9 @@ Installation
 
     $ pipenv install requests-threads
     ✨🍰✨
+    
+    
+Inspiration
+-----------
+
+This codebase was inspired by future work on Requests, as well as [requests-twisted](https://pypi.python.org/pypi/requests-twisted/).
