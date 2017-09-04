@@ -1,5 +1,5 @@
-requests-threads
-================
+requests-threads 🎭
+===================
 
 This repo contains a Requests session that returns awaitable Twisted
 Deferreds instead of response objects.
