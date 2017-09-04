@@ -14,7 +14,7 @@ from setuptools import setup, Command
 # Package meta-data.
 NAME = 'requests-threads'
 DESCRIPTION = 'A Requests session that returns awaitable Twisted Deferreds instead of response objects.'
-URL = 'https://github.com/requests/requests/requests-threads'
+URL = 'https://github.com/requests/requests-threads'
 EMAIL = 'me@kennethreitz.org'
 AUTHOR = 'Kenneth Reitz'
 VERSION = '0.1.1'
