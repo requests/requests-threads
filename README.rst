@@ -63,8 +63,6 @@ that is currently *in the works*, but requires a lot of development time.
 
 This API is likely to change, over time, slightly.
 
-✨🍰✨
-
 Installation
 ------------
 
