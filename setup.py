@@ -9,14 +9,15 @@ import os
 import sys
 from shutil import rmtree
 
-from setuptools import find_packages, setup, Command
+from setuptools import setup, Command
 
 # Package meta-data.
-NAME = 'mypackage'
+NAME = 'requests_threads'
 DESCRIPTION = 'A Requests session that returns awaitable Twisted Deferreds instead of response objects.'
 URL = 'https://github.com/requests/requests/requests-threads'
 EMAIL = 'me@kennethreitz.org'
 AUTHOR = 'Kenneth Reitz'
+VERSION = '0.1.0'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -33,11 +34,6 @@ here = os.path.abspath(os.path.dirname(__file__))
 # Note: this will only work if 'README.rst' is present in your MANIFEST.in file!
 with io.open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = '\n' + f.read()
-
-# Load the package's __version__.py module as a dictionary.
-about = {}
-with open(os.path.join(here, NAME, '__version__.py')) as f:
-    exec(f.read(), about)
 
 
 class PublishCommand(Command):
@@ -76,19 +72,14 @@ class PublishCommand(Command):
 # Where the magic happens:
 setup(
     name=NAME,
-    version=about['__version__'],
+    version=VERSION,
     description=DESCRIPTION,
     long_description=long_description,
     author=AUTHOR,
     author_email=EMAIL,
     url=URL,
-    packages=find_packages(exclude=('tests',)),
     # If your package is a single module, use this instead of 'packages':
-    # py_modules=['mypackage'],
-
-    # entry_points={
-    #     'console_scripts': ['mycli=mymodule:cli'],
-    # },
+    py_modules=['requests_threads'],
     install_requires=REQUIRED,
     include_package_data=True,
     license='ISC',
