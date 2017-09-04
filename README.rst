@@ -1,7 +1,7 @@
 requests-threads 🎭
 ===================
 
-This repo contains a Requests session that returns awaitable Twisted
+This repo contains a Requests session that returns the amazing `Twisted <http://twistedmatrix.com/trac/>`_'s awaitable
 Deferreds instead of Response objects.
 
 It's awesome, basically — check it out:
