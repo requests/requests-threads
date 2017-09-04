@@ -50,8 +50,10 @@ Example Usage (using Twisted):
 Each request is sent via a new thread, automatically. This works fine for basic
 use cases.
 
-This is a preview of the true asyncronous API we have panned for Requests
+This is a **an experiment**, and a preview of the true asyncronous API we have panned for Requests
 that is currently *in the works*, but requires a lot of development time.
+
+This API is likely to change, over time, slightly.
 
 ✨🍰✨
 
