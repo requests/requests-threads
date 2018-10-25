@@ -65,7 +65,7 @@ Each request is sent via a new thread, automatically. This works fine for basic
 use cases. This automatically uses Twisted's ``asyncioreactor``, if you do not
 provide your own reactor (progress to be made there, help requested!).
 
-**This is a an experiment**, and a preview of the true asyncronous API we have planned for Requests
+**This is a an experiment**, and a preview of the true asynchronous API we have planned for Requests
 that is currently *in the works*, but requires a lot of development time. If you'd like to help (p.s. **we need help**, `send me an email <mailto:me@kennethreitz.org>`_).
 
 This API is likely to change, over time, slightly.
