@@ -17,7 +17,6 @@ Let's send 100 concurrent requests! \\o/
 **Example Usage** using ``async``/``await`` —
 
 .. code:: python
-
 	from requests_threads import AsyncSession
 
 	session = AsyncSession(n=100)
@@ -25,7 +24,9 @@ Let's send 100 concurrent requests! \\o/
 	async def _main():
 	    rs = []
 	    for _ in range(100):
-	        rs.append(await session.get('http://httpbin.org/get'))
+		rs.append(session.get('http://httpbin.org/get'))
+	    for i in range(100):
+		rs[i] = await rs[i]
 	    print(rs)
 
 	if __name__ == '__main__':
